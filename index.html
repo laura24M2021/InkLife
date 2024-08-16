@@ -8,6 +8,42 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="icon" href="./img/logo.png" type="image/x-icon">
 </head>
+<style>
+    /* Estilos generales para pantallas grandes */
+@media (min-width: 768px) {
+    .hero h1 {
+        font-size: 4rem;
+    }
+    .gallery img {
+        width: 30%;
+    }
+}
+
+/* Estilos para tablets y pantallas medianas */
+@media (max-width: 767px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .gallery img {
+        width: 48%;
+    }
+}
+
+/* Estilos para móviles */
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .gallery img {
+        width: 100%;
+    }
+}
+
+</style>
 <body>
     <header>
         <nav>

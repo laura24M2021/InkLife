@@ -176,3 +176,83 @@ main {
 .cont:hover {
     background: #d43f62;
 }
+/* Responsividad */
+
+/* Ajustes para pantallas pequeñas (smartphones) */
+@media (max-width: 768px) {
+    /* Ajustar el padding general del main */
+    main {
+        padding: 10px;
+    }
+
+    /* Servicios - Reemplazar grid por un diseño en columnas */
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .service-item {
+        margin-bottom: 20px;
+    }
+
+    /* Galería - Reemplazar grid por un diseño en columnas */
+    .gallery-images {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-images img {
+        height: 150px;
+    }
+
+    /* Testimonios - Ajustes para pantallas pequeñas */
+    .testimonials {
+        padding: 10px;
+    }
+
+    .testimonial {
+        font-size: 0.9em;
+    }
+
+    /* CTA - Ajustes para pantallas pequeñas */
+    .cta {
+        padding: 20px 10px;
+    }
+
+    .cta h2 {
+        font-size: 1.5em;
+    }
+
+    .cta p {
+        font-size: 1em;
+    }
+
+    .cont {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+}
+
+/* Ajustes para pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+    /* Servicios - Ajustar columnas a 2 para tablets */
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Galería - Ajustar columnas a 2 para tablets */
+    .gallery-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Ajustes para pantallas grandes (desktops) */
+@media (min-width: 1025px) {
+    /* Servicios - Ajustar columnas a 3 para desktops */
+    .services {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Galería - Ajustar columnas a 3 para desktops */
+    .gallery-images {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

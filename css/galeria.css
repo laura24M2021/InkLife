@@ -136,3 +136,14 @@ nav ul li a {
     border: none;
     font-size: 18px;
 }
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-filters button {
+        margin: 0.5rem 0;
+    }
+}

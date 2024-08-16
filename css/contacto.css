@@ -143,3 +143,61 @@
 .modal p {
     font-size: 16px;
 }
+  /* Pantallas muy pequeñas (teléfonos verticales) */
+  @media (max-width: 480px) {
+    .contact-sections {
+        flex-direction: column;
+    }
+
+    .contact-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+/* Pantallas grandes (escritorios grandes) */
+@media (min-width: 1200px) {
+    .contact {
+        padding: 60px 40px;
+    }
+
+    .contact-card {
+        padding: 30px;
+    }
+
+    .modal-content {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .formulario-contacto {
+        width: 100%;
+    }
+
+    .contact-card {
+        margin-bottom: 20px;
+    }
+}
+/* Mapa */
+.map-container {
+    padding-top: 75%; /* Aspect Ratio de 4:3 en pantallas pequeñas */
+}
+
+@media (min-width: 1024px) {
+    .map-container {
+        padding-top: 56.25%; /* Aspect Ratio 16:9 en pantallas grandes */
+    }
+}
+
+/* Modal */
+@media (max-width: 480px) {
+    .modal-content {
+        width: 90%;
+    }
+}
